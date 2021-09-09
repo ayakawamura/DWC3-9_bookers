@@ -1,0 +1,38 @@
+<div class="index">
+  <h1>Books</h1>
+
+  <% @books.each do |book| %>
+  <div>
+  <h3>Title</h3>
+  <p><%= book.title %></p>
+  </div>
+
+  <div>
+  <h3>Body</h3>
+  <p><%= book.body %></p>
+  </div>
+
+  <div>
+  <%=link_to "Show",book_path(book.id)%>
+  <%=link_to "Edit",edit_book_path(book.id)%>
+  <%=link_to "Destroy",book_path(book.id), method: :delete %>
+  <!--pathにはリンク先のパスではなく操作したいアクションのパスを入れる-->
+  <!--リンク先のパスはコントローラのredirect_toで入力-->
+   <!--"date-confirm" =>"Are You Sure?"-->
+  </div>
+
+  <% end %>
+</div>
+
+<div class="new">
+  <h2>New book</h2>
+
+  <%= form_with model:@book,local:true do |f|%>
+  <p>Title</p>
+  <%=f.text_field :title%>
+  <p>Body</p>
+   <%=f.text_area :body%>
+
+   <p><%=f.submit "Create Book"%></p>
+  <%end%>
+</div>
