@@ -61,7 +61,7 @@ td{
     font-size:13px;
 }
 
-.newbook-contents{
+.book-contents{
     margin-bottom: 10px;
 }
 
@@ -71,4 +71,8 @@ label{
 
 p{
     margin: 33px;
+}
+
+.notice,.notice2{
+  color: green;
 }
