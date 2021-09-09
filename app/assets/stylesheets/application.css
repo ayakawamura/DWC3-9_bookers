@@ -81,8 +81,9 @@ label{
     margin: 33px;
 }
 
-.notice,.notice2{
+.notice{
   color: green;
+  margin: 33px;
 }
 
 .warning{
