@@ -13,3 +13,62 @@
  *= require_tree .
  *= require_self
  */
+
+/** {*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  box-sizing: border-box;*/
+/*}*/
+
+body{
+  margin: 30px;
+  font-size: 13px;
+}
+
+.top{
+  margin: 20px;
+}
+
+.bookers{
+  margin: 30px 50px;
+  font-size: 15px;
+}
+
+span{
+  font-weight: bold;
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  background-color: black;
+  color: white;
+}
+
+h1,h2{
+    font-weight: bold;
+}
+
+
+tr{
+    margin-bottom: 10px;
+}
+
+td{
+    padding: 0 5px 5px 0;
+    font-size:13px;
+}
+
+.newbook-contents{
+    margin-bottom: 10px;
+}
+
+label{
+    display: block;
+}
+
+p{
+    margin: 33px;
+}
